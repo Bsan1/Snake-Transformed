@@ -86,6 +86,7 @@ public class Snake : MonoBehaviour
     public void Grow()
     {
         Transform segment = Instantiate(segmentPrefab);
+        segment.gameObject.GetComponent<SnakeBody>().head = gameObject;
         segment.position = segments[segments.Count - 1].position;
         segments.Add(segment);
     }

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
+
+//Whole code needs to rework
+
 public class Food : MonoBehaviour
 {
     public Collider2D gridArea;
